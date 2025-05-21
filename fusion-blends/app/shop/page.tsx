@@ -1,8 +1,13 @@
 
 export default function ShopPage() {
     return(
-        <div>
-            This is the Shop Page
-        </div>
+        <main>
+            <div className="font-heebo text-3xl text-white min-h-screen">
+            This is the Shop Page   
+            </div>
+
+            
+        </main>
+       
     )
 }
