@@ -1,9 +1,27 @@
 @import "tailwindcss";
 
-@theme {
+:root {
+  --maroon: #9c0035;
+  --orange: #f56700;
+  --ivory: #FFFFFD;
+  --teal: #0D98BA;
 
-  --font-poppins: Poppins, sans-serif;
-  --font-pacifico: Pacifico, sans-serif;
-  
+  --background-gradient: linear-gradient(180deg, var(--maroon) 0%, var(--orange) 100%);
+}
 
+/* @theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+} */
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  background: var(--background-gradient);
+  font-family: var(--font-poppins), sans-serif;
 }
