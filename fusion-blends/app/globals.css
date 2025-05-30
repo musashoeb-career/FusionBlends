@@ -18,3 +18,7 @@ body {
 .subheading {
   font-family: var(--font-pacifico), serif;
 }
+
+.description {
+  font-family: var(--font-poppins), sans-serif;
+}
