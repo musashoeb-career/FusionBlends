@@ -1,6 +1,60 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 
 export default function ShopPage() {
+
+  const [faloodaQuantity, setFaloodaQuantity] = useState(0)
+  const [teaQuantity, setTeaQuantity] = useState(0)
+  const [coffeeQuantity, setCoffeeQuantity] = useState(0)
+  const maxQuantity = 20
+
+  enum juiceType  {
+    COFFEE,
+    FALOODA, 
+    TEA
+  }
+
+  const incrementQuantity = (juiceQuantity : number, type : juiceType) => {
+        if (juiceQuantity == maxQuantity) {
+          return
+        } 
+        switch (type) {
+          case (juiceType.COFFEE): {
+            setCoffeeQuantity(prevQuanity => prevQuanity + 1)
+          }
+          case (juiceType.FALOODA): {
+             setFaloodaQuantity(prevQuanity => prevQuanity + 1)
+          }
+          case (juiceType.TEA): {
+             setTeaQuantity(prevQuanity => prevQuanity + 1)
+          }
+          default:
+            break
+        }    
+  }
+
+     const decrementQuantity = (juiceQuantity : number, type : juiceType) => {
+        if (juiceQuantity == 0) {
+          return
+        } 
+        switch (type) {
+          case (juiceType.COFFEE): {
+            setCoffeeQuantity(prevQuanity => prevQuanity - 1)
+          }
+          case (juiceType.FALOODA): {
+             setFaloodaQuantity(prevQuanity => prevQuanity - 1)
+          }
+          case (juiceType.TEA): {
+             setTeaQuantity(prevQuanity => prevQuanity - 1)
+          }
+          default:
+            break
+        }    
+  }
+
+
   return (
     <main>
       <div className= "min-h-screen flex justify-center items-center text-2xl">
@@ -17,6 +71,11 @@ export default function ShopPage() {
               FALOODA IS A POPULAR SOUTH ASIAN SWEET, 
               CREAMY DRINK MADE WITH ROSE SYRUP AND MILK, 
               OFFERING A FRAGRANT AND REFRESHING FLAVOR.
+            </div>
+            <div className="flex flex-row justify-around">
+                <button onClick={()=> incrementQuantity(faloodaQuantity, juiceType.FALOODA)}>Add</button>
+                <div>{faloodaQuantity}</div>
+                <button onClick={()=> decrementQuantity(faloodaQuantity, juiceType.FALOODA)}>Subtract</button>
             </div>
             </div>
           </div>
