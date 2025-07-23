@@ -5,6 +5,7 @@
   --orange: #f56700;
   --ivory: #FFFFFD;
   --teal: #0D98BA;
+  --grey: #ECE9E9;
 
   --background-gradient: linear-gradient(180deg, var(--maroon) 0%, var(--orange) 100%);
 }
