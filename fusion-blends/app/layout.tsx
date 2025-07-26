@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import {Poppins, Pacifico } from "next/font/google";
 import "./globals.css";
 import NavBar from '../components/navbar'
+import Footer from "@/components/footer";
 
 
 const poppins = Poppins({
@@ -34,6 +35,7 @@ export default function RootLayout({
       >
         <NavBar></NavBar>
         {children}
+        <Footer></Footer>
       </body>
     </html>
   );

@@ -7,7 +7,7 @@ export default function NavBar() {
         <div className="flex">
             
             <div className="relative rounded-lg w-[150px] h-[150px] m-[15px] bg-white">
-                <Image src = {"/logo-final.png"}  alt = "Fusion Blends Logo" objectFit="contain" fill></Image>
+                <Image src = {"/fusion-logo.png"}  alt = "Fusion Blends Logo" objectFit="contain" fill></Image>
             </div>
            <nav className="flex-6 flex justify-around items-center text-[var(--ivory)]">
             <Link href = "/" className="hover:brightness-75">Home</Link>

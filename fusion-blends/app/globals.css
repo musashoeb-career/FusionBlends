@@ -3,11 +3,13 @@
 :root {
   --maroon: #9c0035;
   --orange: #f56700;
-  --ivory: #FFFFFD;
+  --footer-orange: #e65508;
+  --ivory: #FFFFF0;
   --teal: #0D98BA;
   --grey: #ECE9E9;
 
   --background-gradient: linear-gradient(180deg, var(--maroon) 0%, var(--orange) 100%);
+  --footer-gradient: linear-gradient(180deg, var(--footer-orange) 0%, var(--maroon) 100%);
 }
 
 
@@ -22,4 +24,8 @@ body {
 
 .description {
   font-family: var(--font-poppins), sans-serif;
+}
+
+.footer {
+  background: var(--footer-gradient);
 }
