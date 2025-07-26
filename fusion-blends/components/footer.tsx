@@ -60,8 +60,8 @@ export default function Footer() {
                     <Link href = "/" className="hover:brightness-75">Review</Link>
                     <Link href = "/about" className="hover:brightness-75">Customer Feedback</Link>
                     <Link href = "/shop" className="hover:brightness-75">Location: Farmington Hills</Link>
-                    <div className="rounded-lg bg-white hover:bg-[var(--maroon)] flex justify-center items-center w-[120px] h-[40px] p-[5px]">
-                         <Link href = "/shop" className="hover:text-white text-[var(--maroon)]">Contact Us</Link>
+                    <div className="group rounded-lg bg-white hover:bg-[var(--maroon)] flex justify-center items-center w-[120px] h-[40px] p-[5px]">
+                         <Link href = "/shop" className="group-hover:text-white text-[var(--maroon)]">Contact Us</Link>
                     </div>
                    
                 </div>
