@@ -2,8 +2,8 @@
 
 import { motion } from "motion/react"
 import Image from "next/image";
-import {positionJuiceImages} from '../data/juices'
-import {positionSpiceImages} from '../data/spices'
+import {positionJuiceImages} from '../data/home/juices'
+import {positionSpiceImages} from '../data/home/spices'
 
 export default function HomePage() {
 

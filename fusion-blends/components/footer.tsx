@@ -7,6 +7,8 @@ import { easeInOut, motion } from "motion/react"
 export default function Footer() {
   return (
     <div className="flex flex-col w-[full] h-auto footer">
+
+        {/* Animating Footer Line */}
         <motion.div
             initial = {{width: 0}}
             whileInView = {{width: "100%"}}
@@ -17,6 +19,8 @@ export default function Footer() {
                 marginBottom: '10px',
                  }}>
         </motion.div>
+
+        {/* Social Media Icons */}
         <div className="flex">
                 <nav className="flex w-full">
                 <div className="flex-1 flex flex-row items-center">
@@ -56,7 +60,9 @@ export default function Footer() {
                         </a>
                 </div>
                 </div> 
-                <div className="flex-5 flex justify-around items-center text-white mt-[20px]">
+                
+                 {/* Customer Reviews */}
+                <div className="flex-4 flex justify-around items-center text-white mt-[20px]">
                     <Link href = "/" className="hover:brightness-75">Review</Link>
                     <Link href = "/about" className="hover:brightness-75">Customer Feedback</Link>
                     <Link href = "/shop" className="hover:brightness-75">Location: Farmington Hills</Link>
@@ -66,7 +72,7 @@ export default function Footer() {
                    
                 </div>
             </nav>
-            <div className="relative flex m-[10px]">
+            <div className="relative flex m-[15px]">
             <Image
                 src = {"/fusion-logo-white.png"}
                 alt = {"Fusion Blends Logo - a white version"}
