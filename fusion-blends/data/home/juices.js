@@ -16,21 +16,21 @@
 
 export const positionJuiceImages = [
   {image: juiceImages.lankanLooda,
-   top: 150, 
-   left: 180,
-   width: 550,
+   top: "19vh", 
+   left: "12.5vw",
+   width: "37vw",
    yTransform: -50
   },
   {image: juiceImages.islandIced,
-   top: 135, 
-   left: 380,
-   width: 650,
+   top: "17vh", 
+   left: "28vw",
+   width: "42vw",
    yTransform: -150
   },
   {image: juiceImages.ceylonBrew,
-   top: 150, 
-   left: 680,
-   width: 550,
+   top: "19vh", 
+   left: "48vw",
+   width: "37vw",
    yTransform: -50
   }
 ]
