@@ -26,43 +26,74 @@ export default function Footer() {
                 <div className="flex-1 flex flex-row items-center">
                     <div className="relative m-[15px]">
                         <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                            <Image
-                                className="hover:brightness-25"
+                            <div className="group">
+                                 <Image
+                                className="group-hover:hidden"
                                 src="./instagram.svg"
-                                alt="Instagram Icon"
+                                alt="Default Instagram Icon"
                                 objectFit="contain"
                                 width={35}
                                 height={35}
                             />
+                                <Image
+                                    className="hidden group-hover:block"
+                                    src="./instagram-red.svg"
+                                    alt="Red Instagram Icon"
+                                    objectFit="contain"
+                                    width={35}
+                                    height={35}
+                                />
+                            </div>
                         </a>
                     </div>
                     <div className="relative m-[10px]">
                         <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                            <Image
-                                className="hover:brightness-25"
+                             <div className="group">
+                                 <Image
+                                className="group-hover:hidden"
                                 src="./facebook.svg"
-                                alt="Facebook Icon"
+                                alt="Default Facebook Icon"
                                 objectFit="contain"
                                 width={35}
                                 height={35}
                             />
+                                <Image
+                                    className="hidden group-hover:block"
+                                    src="./facebook-red.svg"
+                                    alt="Red Facebook Icon"
+                                    objectFit="contain"
+                                    width={35}
+                                    height={35}
+                                />
+                            </div>
                         </a>
                     </div>
                 <div className="relative  m-[10px]">
                     <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
-                        <Image
-                            className="hover:brightness-25"
-                            src="./twitter.svg"
-                            alt="Twitter Icon"
-                            width={35}
-                            height={35}
-                        />
+                         <div className="group">
+                                 <Image
+                                className="group-hover:hidden"
+                                src="./twitter.svg"
+                                alt="Default Twitter Icon"
+                                objectFit="contain"
+                                width={35}
+                                height={35}
+                            />
+                                <Image
+                                    className="hidden group-hover:block"
+                                    src="./twitter-red.svg"
+                                    alt="Red Twitter Icon"
+                                    objectFit="contain"
+                                    width={35}
+                                    height={35}
+                                />
+                            </div>
                         </a>
                 </div>
                 </div> 
-                
+
                  {/* Customer Reviews */}
-                <div className="flex-4 flex justify-around items-center text-white mt-[20px]">
+              <div className="hidden sm:flex flex-[4] justify-around items-center text-white mt-[20px]">
                     <Link href = "/" className="hover:brightness-75">Review</Link>
                     <Link href = "/about" className="hover:brightness-75">Customer Feedback</Link>
                     <Link href = "/shop" className="hover:brightness-75">Location: Farmington Hills</Link>
