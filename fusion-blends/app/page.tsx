@@ -2,7 +2,6 @@
 
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import { juiceImages, positionJuiceImages } from '../data/home/juices';
 import { positionSpiceImages } from '../data/home/spices';
 import { useMediaQuery } from 'react-responsive';

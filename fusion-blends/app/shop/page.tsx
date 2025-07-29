@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useState } from "react";
 import { juiceImages} from "@/data/home/juices";
 import ShopCard from "@/components/shopcard";

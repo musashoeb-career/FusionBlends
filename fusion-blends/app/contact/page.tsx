@@ -1,7 +1,6 @@
 "use client";
 
-import ShopCard from "@/components/shopcard";
-import { juiceImages } from "@/data/home/juices";
+
 import { motion } from "motion/react"
 
 export default function ContactPage() {

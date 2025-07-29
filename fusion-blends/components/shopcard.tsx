@@ -3,7 +3,6 @@
 import { easeIn, motion } from "motion/react"
 import {Plus, Minus} from 'lucide-react';
 import Image from "next/image";
-import { juiceImages} from "@/data/home/juices";
 import { useState } from "react";
 
 
