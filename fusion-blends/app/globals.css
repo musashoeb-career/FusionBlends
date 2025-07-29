@@ -29,3 +29,11 @@ body {
 .footer {
   background: var(--footer-gradient);
 }
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-x-180 {
+  transform: rotateX(180deg);
+}
